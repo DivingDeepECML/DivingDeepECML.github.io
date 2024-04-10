@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Continual Learning and Adaptation for Time Evolving Data</title>
+  <title>Diving Deep: Forecasting Sea Surface Temperatures and  Anomalies</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -60,7 +60,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#program">Program</a></li>
+          <li><a href="#program">Challenge</a></li>
           <li><a href="#submission">Submission</a></li>
           <li><a href="#team">Organizers</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -74,9 +74,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-      <h1>ICDM Workshop on Continual Learning and Adaptation for Time Evolving Data</h1>
-      <h2> November 17, 2020, Sorrento (Italy) </h2>
-      <a href="#about" class="btn-get-started scrollto">About the workshop</a>
+      <h1>ECML PKDD 2024 Diving Deep: Forecasting Sea Surface Temperatures and  Anomalies</h1>
+      <h2>September 9-13 | Vilnius</h2>
+      <a href="#about" class="btn-get-started scrollto">About the discovery challenge</a>
     </div>
   </section><!-- End Hero -->
 
@@ -90,30 +90,32 @@
 
           
             <div class="section-title" data-aos="zoom-in">
-              <h2>About the workshop</h2>
+              <h2>About the challenge</h2>
             </div>
-              <p>In continual learning, models can continually accumulate knowledge over time without the need to retrain from scratch, with particular methods aimed to alleviate forgetting. It can continually learn from a stream of experiential data, building on what was learnt previously, while being able to reapply, adapt and generalize to new situations. This is particularly important when there are changes in the data streams. Current predictive models need to be adapted to these changes (drifts) as soon as possible while maintaining good performance measures (e.g. accuracy, time, delay, energy efficiency). </p>
-               <p> The aim of this workshop is to bring together researchers from the areas of continual learning, model adaptation and concept drift in order to encourage discussions and new collaborations on solving the problems in this domain. We like to encourage state-of-the art research in the area of continual learning, model adaptation and concept drift. Beyond that we encourage research that demonstrates the applicability of these research in various areas including (but not limited to) earth and environmental science, sensor networks and transportation network. We encourage the submissions of research that incorporates the fundamentals of green AI. Therefore, this workshop encourages submissions that attempts to address any of these issues. </p>
-                <p>This workshop will provide a forum for international researchers and practitioners to share and discuss their original and interesting  work on addressing new challenges and research issues in the area.
-                </p>
+			<p>
+              Hurricanes, mass coral bleaching, disruption of sea mammal migration patterns, and extremely hot summers or cold winters all have one thing in common - they are driven by temperature changes in our seas and oceans. 
+In this challenge, the aim for participants will be to investigate the predictability of global SSTs and SSTAs. 
+Variability in sea surface temperatures (SSTs), also known as SST anomalies (SSTAs), is linked to climate oscillations and occurrences of extreme events, including the El Niño‐Southern Oscillation (ENSO), the Indian Ocean Dipole (IOD) oscillation, and marine heatwaves. The participants will specifically focus on forecasting SSTs and SSTAs with a time horizon with a one-month and six-month lead time.
+</p>
 
               <p>
-                  <p><strong>The topics of interest of this workshop include (but not limited to) the following:</strong></p>
+                  <p><strong>Predicting SST is crucial for several reasons:</strong></p>
                   <ul>
-                  <li><span style="font-weight: 400;">New data-level and algorithm-level approaches in non-stationary environments for continual learning, model adaptation and concept drift.</span></li>
-                  <li><span style="font-weight: 400;">Adaptive ensemble approaches for data streams.</span></li>
-                  <li><span style="font-weight: 400;">Passive and active approaches to dealing with concept drift.</span></li>
-                  <li><span style="font-weight: 400;">Approaches to dealing with recurring concepts.</span></li>
-                  <li><span style="font-weight: 400;">Semi-supervised learning and active learning approaches.</span></li>
-                  <li><span style="font-weight: 400;">Explainable AI (XAI) approaches for drift explanation.&nbsp;</span></li>
-                  <li><span style="font-weight: 400;">Performance evaluation in incremental and online learning scenarios.</span></li>
-                  <li><span style="font-weight: 400;">Case studies and real-world applications.</span></li>
-                  <li><span style="font-weight: 400;">Green AI for data streams.</span></li>
+                  <li><span style="font-weight: 400;">Climate Forecasting: SSTs are key indicators of climate patterns and can help predict weather phenomena such as hurricanes, droughts, and floods. By understanding SST variations, meteorologists can better anticipate and prepare for extreme weather events.</span></li>
+                  <li><span style="font-weight: 400;">Ecosystem Management: SST influences marine ecosystems, including the distribution and abundance of species, migration patterns, and reproductive cycles. Predicting SST helps marine biologists and conservationists manage and protect marine biodiversity more effectively.
+</span></li>
+                  <li><span style="font-weight: 400;">Fisheries Management: Many fish species rely on specific temperature ranges for breeding, feeding, and migration. Predicting SST helps fisheries managers make informed decisions about quotas, fishing seasons, and habitat conservation to ensure sustainable fish populations.
+</span></li>
+                  <li><span style="font-weight: 400;">Human Activities: SST affects various human activities, such as shipping, tourism, and coastal development. Predicting SST enables stakeholders to plan and adapt infrastructure, coastal defenses, and tourism activities in response to changing ocean temperatures.
+</span></li>
+                  <li><span style="font-weight: 400;">Climate Change Monitoring: SST is a critical indicator of climate change, with rising temperatures affecting ocean circulation, sea levels, and weather patterns. Accurate predictions of SST trends help scientists monitor and assess the impacts of climate change on the oceans and the broader environment.
+</span></li>
+               
                   </ul>
               </p>
             
 
-
+<img src="assets/img/ecml.png" alt="" height="300" width="300">
 
           
         
@@ -130,96 +132,12 @@
     
               
                 <div class="section-title" data-aos="zoom-in">
-                  <h2>Workshop Program</h2>
+                  <h2>Challenge</h2>
 		</div>	
                   
-		   <h2> Workshop Program (Session B4)</h2>
+		   <h2> The dataset</h2>
+			The SST and SSTA data were sourced from ERA5, the fifth-generation reanalysis conducted by the European Centre for Medium‐Range Weather Forecasts (ECMWF), covering the past nine decades globally. ERA5 offers monthly estimates of various atmospheric, land, and oceanic variables on a global scale, with a spatial resolution of 0.25°, spanning from January 1940 to the present. 
 
-		  This year, ICDM is held online. The paper presentations will be in the form of recorded videos, which will be made available to the conference attendees before the conference, on the online platform. On the day of the workshop, each main author is invited to give a short live introduction of his paper and to respond to the questions of the attendees. 
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-sk2j{background-color:#E7E6E6;border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">   <br><span style="color:black">5 mins</span>   </th>
-    <th class="tg-0pky">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Opening</span>&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0pky">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Mykola Pechenizkiy </span> &nbsp;&nbsp;&nbsp;</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">   </span><br><span style="color:black">2 + 5 mins</span><span style="background-color:#E7E6E6">   </span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">An unsupervised&nbsp;&nbsp;&nbsp;methodology for online drift detection in multivariate industrial datasets</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Sarah Klein and </span>Mathias&nbsp;&nbsp;&nbsp;Verbeke<span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-  </tr>
-  <tr>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">   </span><br><span style="color:black">2 + 5 mins</span><span style="background-color:#E7E6E6">   </span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Restructuring of&nbsp;&nbsp;&nbsp;Hoeffding Trees for Trapezoidal Data Streams</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Christian&nbsp;&nbsp;&nbsp;Schreckenberger, Tim Glockner, Christian Bartelt, and&nbsp;&nbsp;&nbsp;Heiner Stuckenschmidt</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-  </tr>
-  <tr>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">    </span><br><span style="color:black">2 + 5 mins</span><span style="background-color:#E7E6E6">   </span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">MIR_MAD: An Efficient and&nbsp;&nbsp;&nbsp;On-line Approach for Anomaly Detection in Dynamic Data Stream</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Chang How Tan, Vincent CS Lee, and&nbsp;&nbsp;&nbsp;Mahsa Salehi</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">    <br>2 + 5 mins   </td>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>TEDD: Robust Detection of Unstable&nbsp;&nbsp;&nbsp;Temporal Features&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>Ricardo Pereira, Bruno Laraña, Nádia Soares, and Miguel Araújo&nbsp;&nbsp;&nbsp;</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">     <br><span style="color:black">2 + 5 mins</span>   </td>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br><span style="color:black">LbR: A New Regression Architecture for&nbsp;&nbsp;&nbsp;Automated Feature Engineering</span>&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Meng Wang, </span>Zhijun Ding<span style="color:black">, and&nbsp;&nbsp;&nbsp;Meiqin Pan</span>&nbsp;&nbsp;&nbsp;</td>
-  </tr>
-  <tr>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">     </span><br><span style="color:black">2 + 5 mins</span><span style="background-color:#E7E6E6">   </span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Pelican: Continual Adaptation&nbsp;&nbsp;&nbsp;for Phishing Detection</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Wernsen Wong and Gillian Dobbie</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-  </tr>
-  <tr>
-    <td class="tg-sk2j"><span style="color:black">2 + 5 mins</span><span style="background-color:#E7E6E6">   </span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Learning Student Interest Trajectory for&nbsp;&nbsp;&nbsp;MOOC Thread Recommendation</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-    <td class="tg-sk2j"><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Shalini Pandey, Andrew Lan, George Karypis, and Jaideep Srivastava</span><span style="background-color:#E7E6E6">&nbsp;&nbsp;&nbsp;</span></td>
-  </tr>
-</tbody>
-</table>
-		  <br><br>
-                  <h2> Accepted Papers</h2>
-                  <ul>
-                <li>Ricardo Pereira, Bruno Laraña, Nádia Soares, and Miguel Araújo, "TEDD: Robust Detection of Unstable Temporal Features"</li>
-    
-               <li>Sarah Klein and Mathias Verbeke, "An unsupervised methodology for online drift detection in multivariate industrial datasets"</li>
-
-                <li>Christian Schreckenberger, Tim Glockner, Christian Bartelt, and Heiner Stuckenschmidt, "Restructuring of Hoeffding Trees for Trapezoidal Data Streams" </li>
-     
-                <li>Wernsen Wong and Gillian Dobbie, "Pelican: Continual Adaptation for Phishing Detection" </li>
-
-
-              <li>Meng Wang, Zhijun Ding, and Meiqin Pan, "LbR: A New Regression Architecture for Automated Feature Engineering"</li>
-
-              <li>Chang How Tan, Vincent CS Lee, and Mahsa Salehi, "MIR_MAD: An Efficient and On-line Approach for Anomaly Detection in Dynamic Data Stream"</li> 
-	 
-
-              <li>Shalini Pandey, Andrew Lan, George Karypis, and Jaideep Srivastava  "Learning Student Interest Trajectory for MOOC Thread Recommendation"</li>
-            </ul>  
-                
-
-                 
-    
-    
-              
-            
-    
-          </div>
         </section><!-- End Program Section -->
 
 
@@ -295,28 +213,24 @@
         </div>
           <div class="box-heading" data-aos="fade-up">
           <h3>Submission </h3>
-          <p>
-              
-              
-              Paper submissions should be limited to a maximum of 8 pages plus 2 extra pages, in the IEEE 2-column
-              format used by the IEEE ICDM 2020 conference, including the bibliography and any possible appendices. 
-              
-              All submissions will be peer reviewed by the Program Committee on the basis of technical quality, relevance to scope of the conference, originality, significance, and clarity.
-              
-              Each submission should be regarded as an undertaking that, if the paper is accepted, at least one of the authors must register and  present the work. 
-              
-               By the unique ICDM tradition, all accepted workshop papers will be published in the dedicated ICDMW proceedings published by the IEEE Computer Society Press. Therefore, papers must not have been accepted for publication elsewhere or be under review for another workshop, conferences or journals.
-              </p>
-          <h3> Submission Link </h3>
-          <p> Submission portal: <a href="https://wi-lab.com/cyberchair/2020/icdm20/scripts/ws_submit.php?subarea=S">https://wi-lab.com/cyberchair/2020/icdm20/scripts/ws_submit.php?subarea=S</a></p>
           
 
-          <h3> Key Dates  </h3>
+          <p> Submission portal: <a href="">TBD</a></p>
           
-          <li>Submission deadline: <del>August 24, 2020</del> <ins>August 28, 2020</ins> </li>
-          <li>Acceptance notification: September 17, 2020</li>
-          <li>Camera-ready deadline: September 24, 2020</li>
-          <li>Workshop date:  November 17, 2020</li>
+
+		The reports must adhere to the outlined guidelines, including referencing the published source codes (e.g., GitHub repository). They should be submitted by July 31, 2024, through our conference submission system, CMT.
+
+
+		<p></p>
+          <h3> Timeline for the challenge  </h3>
+          We anticipate that the challenge will follow the timeline below:
+          <li> Start of competition: Monday, 13th May 2024, 11:59 PM UTC </li>
+          <li> End of competition: Sunday, 17th June 2024 UTC, 11:59 PM UTC </li>
+          <li> Written report submission deadline: Monday, 3rd July 2024 11:59 PM UTC (planned) </li>
+          <li> Publish results: Sunday, 30th June 2024 11:59 PM UTC (planned) </li>
+          <li> Camera-ready deadline: Wed, 31st July 2024 11:59 PM UTC (planned) </li>
+          <li> Winners present solutions at ECML/PKDD 2024: Monday, 9th September - Friday, 13th September 2024 </li>
+          
 
 
         </div>
@@ -430,51 +344,62 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-2 col-md-6 d-flex ">
             <div class="member" data-aos="fade-up">
               <div class="member-img" align="center">
-                <img src="assets/img/team/yunsing.jpg" class="img-fluid" alt="" height="142" width="142">
+                <img src="assets/img/team/varvara-vetrova.jpg" class="img-fluid" alt="" height="140" width="140">
               </div>
               <div class="member-info">
-                <h4>Dr Yun Sing Koh</h4>
-                <span>The University of Auckland, New Zealand</span>
+                <h4>Dr Varvara Vetrova</h4>
+                <span>University of Canterbury, New Zealand</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img" align="center">
-                <img src="assets/img/team/mykola2.jpg" class="img-fluid" alt=" "height="142" width="142">
+                <img src="assets/img/team/PhilMourot.jpg" class="img-fluid" alt=" "height="140" width="140">
               </div>
               <div class="member-info">
-                <h4>Prof Mykola Pechenizkiy</h4>
-                <span>Eindhoven University of Technology (TU/e), The Netherlands</span>
+                <h4>Dr Phil Mourot</h4>
+                <span>Waikato Regional Council, New Zealand</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img" align="center">
-                <img src="assets/img/team/albert2.jpg" class="img-fluid" alt=" "height="142" width="142">
+                <img src="assets/img/team/ding-ning.jpg" class="img-fluid" alt=" "height="140" width="140">
               </div>
               <div class="member-info" align="center">
-                <h4>Prof Albert Bifet</h4>
-                <span>Télécom ParisTech, France and 
-                University of Waikato, New Zealand </span>
+                <h4>Ding Ning</h4>
+                <span>The University of Canterbury, New Zealand</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img" align="center">
-                <img src="assets/img/team/russelpears2.jpg" class="img-fluid" alt="" height="142" width="142">
+                <img src="assets/img/team/karin.jpg" class="img-fluid" alt=" "height="140" width="140">
+              </div>
+              <div class="member-info" align="center">
+                <h4>Prof Karin Byran</h4>
+                <span>University of Waikato, New Zealand</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img" align="center">
+                <img src="assets/img/team/yunsing.jpg" class="img-fluid" alt="" height="140" width="140">
               </div>
               <div class="member-info">
-                <h4>Assoc Prof Russel Pears</h4>
-                <span>AUT University, New Zealand</span>
+                <h4>Prof Yun Sing Koh</h4>
+                <span>The University of Auckland, New Zealand</span>
               </div>
             </div>
           </div>
@@ -484,7 +409,7 @@
       </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Testimonials Section ======= -->
+    <!-- ======= Testimonials Section ======= 
     <section id="PC" class="PC">
       <div class="container">
 
@@ -503,7 +428,7 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> End Testimonials Section -->
 
      <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -511,7 +436,7 @@
 
         <div class="section-title" data-aos="zoom-in">
           <h2>Contact</h2>
-                  <p></p>Please reach us for questions. Email ykoh at cs.auckland.ac.nz</p>
+                  <p></p>Please reach us for questions. Email divingdeepecml@googlegroups.com</p>
         </div>
 
       
@@ -530,8 +455,8 @@
 
         <div class="row  justify-content-center">
           <div class="col-lg-6">
-            <h3>CLEATED</h3>
-            <p>ICDM Workshop on Continual Learning and Adaptation for Time Evolving Data</p>
+            <h3></h3>
+            <p></p>
           </div>
         </div>
 
