@@ -135,8 +135,74 @@ Variability in sea surface temperatures (SSTs), also known as SST anomalies (SST
                   <h2>Challenge</h2>
 		</div>	
                   
-		   <h2> The dataset</h2>
-			The SST and SSTA data were sourced from ERA5, the fifth-generation reanalysis conducted by the European Centre for Medium‐Range Weather Forecasts (ECMWF), covering the past nine decades globally. ERA5 offers monthly estimates of various atmospheric, land, and oceanic variables on a global scale, with a spatial resolution of 0.25°, spanning from January 1940 to the present. 
+		   <h2>Dataset </h2>
+The SSTA data and additional features (sea surface pressure,  air temperature 2 metres above the surface) were sourced from ERA5, the fifth-generation reanalysis conducted by the European Centre for Medium‐Range Weather Forecasts (ECMWF), covering the past nine decades globally. ERA5 offers monthly estimates of various atmospheric, land, and oceanic variables on a global scale, with a spatial resolution of 0.25°, spanning from January 1940 to the present. 
+We prepared the SSTA training set by subtracting a  climatology value for each month from the corresponding  SST values. We define climatology here as the average value of SST over a certain time period. Each column of “.csv” file contains a time series of SSTA for a specific location, the coordinates for each location are contained in the “.csv”. The “...output.csv” contains SSTA values shifted 3 months in advance for the same location.
+
+<br><br>
+<b>Task: </b> The task is to predict SSTA 3 months in advance based on the previous SSTA values and additional features - mean sea surface pressure and air temperature 2 metres above the surface.
+
+<br><br>
+<b> Evaluation: </b> We provide SSTA data for the evaluation structured in the following way. Each column in the “.csv” contains blocks of 12 time series of SSTA. The goal is to issue a 3 months ahead SSTA forecast for each block. For example, assume that the first block had time series with time stamps [Jan 2011 … Dec 2011] then the forecast would be for April 2012. In the dataset the time stamps are omitted. 
+The evaluation metric is the difference between the RMSE of the simple baseline and RMSE of your forecast averaged across all locations. The simple baseline is the persistent model - the current SSTA value is used as a 3-month ahead forecast.
+
+<br><br> 
+Additional support materials can be found at: Ding Ning, Varvara Vetrova, Karin R. Bryan, Yun Sing Koh (2023) Harnessing the Power of Graph Representation in Climate Forecasting: Predicting Global Monthly Mean Sea Surface Temperatures and Anomalies. In Earth and Space Science. Volume11, Issue3. https://doi.org/10.1029/2023EA003455
+<br><br>
+
+<h2> Technical Details </h2>
+All the code for the competition and information about the dataset will be released here: [ZIP]
+
+You will find the sample submission and related information on the same website. Please submit a zip file containing a single csv named submission.csv, and it should be a single column with the 71 predicted SSTA.
+<br><br>
+
+			<h2> How to participate </h2>
+			Participants will be asked to complete a Google form <a href = "https://forms.gle/8Tcgpd6Y3ahnv4pF8" >[https://forms.gle/8Tcgpd6Y3ahnv4pF8] </a> to enroll in the challenge. Participants is reminded that registering multiple times to gain an unfair advantage is strictly prohibited.
+
+<br><br>
+<h2>Prizes</h2>
+<li> Co-authorship of the challenge paper to the winners. </li>
+<li> The first prize, sponsored by TAIAO (https://taiao.ai/), is €1000 Euros. </li>
+<li>A free ECML conference registration to the best overall winner solution. </<li>
+
+<br><br>
+<h2> Issues and Question </h2>
+Please use the Forum provided by CodaBench to ask questions and report issues.<br>
+Use the contact email with [DIVING DEEP] in the subject for other necessities. <br><br>
+
+<h2> Terms and Conditions </h2>
+
+1. Eligibility<br>
+<li> Participants of all backgrounds and levels of expertise are welcome to join the competition. </<li>
+<li> Participants must agree to abide by these terms and conditions upon registration. </<li>
+<li> External data cannot be used. </<li>
+<li> Teams must be composed of at most five people. </<li>
+<li> Code must be publicly released by participants to ensure the compliance, verify irregularities or inaccuracies, and verify the results. </<li>
+<li> To be eligible for prizes, a brief technical report of 4 pages must be provided, and the worst baseline (persistent model) has to be beaten. </<li>
+
+<br><br>
+2. Competition Period <br>
+<li>  The competition consists of two phases: Phase 1 (Development Phase) and Phase 2 (Evaluation Phase).  </<li>
+<li>  Each phase has a specific start and end date, as stated on the competition page. </<li>
+
+<br><br>
+3. Intellectual Property<br>
+<li>  Participants retain intellectual property rights to their submissions, but grant the organizers the right to use their submissions for promotional or educational purposes.  </<li>
+
+<br><br>
+4. Code of Conduct<br>
+<li>  Participants are expected to maintain professionalism and respect towards other competitors and organizers. Any form of cheating, plagiarism, or unethical behavior will result in disqualification.  </<li>
+
+<br><br>
+5. Disputes and Appeals<br>
+<li>  In case of any disputes, the decision of the competition organizers shall be final.  </<li>
+
+<br><br>
+6. Changes to Terms & Conditions<br>
+<li>  The organizers reserve the right to make changes to the terms and conditions at any time. </<li>
+<li>  Participants will be notified of any significant changes.  </<li>
+
+
 
         </section><!-- End Program Section -->
 
@@ -215,20 +281,21 @@ Variability in sea surface temperatures (SSTs), also known as SST anomalies (SST
           <h3>Submission </h3>
           
 
-          <p> Submission portal: <a href="">TBD</a></p>
+          <p> Submission portal: <a href="https://www.codabench.org/competitions/2975/">CodaBench</a></p>
           
 
 		The reports must adhere to the outlined guidelines, including referencing the published source codes (e.g., GitHub repository). They should be submitted by 31st July 2024, through our conference submission system, CMT.
 
 
 		<p></p>
-          <h3> Timeline for the challenge  </h3>
+          <h3> Timeline for the challenge   </h3>
           We anticipate that the challenge will follow the timeline below:
-          <li> Start of competition: Monday, 13th May 2024, 11:59 PM UTC </li>
-          <li> End of competition: Sunday, 17th June 2024, 11:59 PM UTC </li>
-          <li> Written report submission deadline: Monday, 3rd July 2024 11:59 PM UTC (planned) </li>
-          <li> Publish results: Sunday, 30th June 2024 11:59 PM UTC (planned) </li>
-          <li> Camera-ready deadline: Wednesday, 31st July 2024 11:59 PM UTC (planned) </li>
+          <li> Start of competition: Friday, 17th May 2024, 11:59 PM AOE </li>
+		  <li> Phase 1 (Development Phase) and Phase 2 (Evaluation Phase)</li>
+          <li> End of competition: Sunday, 17th June 2024, 11:59 PM AOE </li>
+          <li> Written report submission deadline: Monday, 3rd July 2024 11:59 PM AOE  </li>
+          <li> Publish results: Sunday, 30th June 2024 11:59 PM UTC  </li>
+          <li> Camera-ready deadline: Wednesday, 31st July 2024 11:59 PM UTC  </li>
           <li> Winners present solutions at ECML/PKDD 2024: Monday, 9th September - Friday, 13th September 2024 </li>
           
 
@@ -387,7 +454,7 @@ Variability in sea surface temperatures (SSTs), also known as SST anomalies (SST
               </div>
               <div class="member-info" align="center">
                 <h4>Prof Karin Byran</h4>
-                <span>University of Waikato, New Zealand</span>
+                <span>University of Auckland, New Zealand</span>
               </div>
             </div>
           </div>
@@ -399,7 +466,7 @@ Variability in sea surface temperatures (SSTs), also known as SST anomalies (SST
               </div>
               <div class="member-info">
                 <h4>Prof Yun Sing Koh</h4>
-                <span>The University of Auckland, New Zealand</span>
+                <span>University of Auckland, New Zealand</span>
               </div>
             </div>
           </div>
@@ -409,26 +476,7 @@ Variability in sea surface temperatures (SSTs), also known as SST anomalies (SST
       </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Testimonials Section ======= 
-    <section id="PC" class="PC">
-      <div class="container">
 
-          <div class="section-title" data-aos="zoom-in">
-              <h2>Program Committee</h2>
-            </div>
-
-            <li>Quan Bai, University of Tasmania,	Australia </li>
-            <li> Diana Benavides Prado, AUT New Zealand </li>
-            <li>Philippe Fournier-Viger, Harbin Institute of Technology, Shenzhen	China </li>
-            <li>Georg Krempl, Utrecht University	The Netherlands </li>
-            <li>Decebal Mocanu, Twente University	The Netherlands </li>
-            <li>Kaiqi Zhao, University of Auckland	New Zealand </li>
-            <li>David Huang, University of Auckland	New Zealand </li>
-
-        </div>
-
-      </div>
-    </section> End Testimonials Section -->
 
      <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
